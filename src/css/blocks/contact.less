@@ -1,0 +1,40 @@
+// main: ../style.less
+
+.contact {
+	display: flex;
+}
+
+.contact__left {
+	width: 47%;
+	padding: 2rem;
+}
+
+.contact__right {
+	width: 53%;
+
+	background: @black url(https://placehold.it/480x700) center no-repeat;
+}
+
+.contact__info {
+	padding: 0;
+	margin: 0 0 3rem;
+	list-style: none;
+
+	font-size: .94rem;
+	color: @black;
+	font-weight: 300;
+}
+
+.contact__info-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: .75rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contact__info-icon {
+	margin-right: .75rem;
+}

@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.intro__inner {
+	display: flex;
+	padding-bottom: 8rem;
+	padding-top: 6.9rem;
+	background: url("/src/images/photo.svg") right bottom no-repeat;
+
+	@media @tablet {
+		background-size: 750px auto;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	@media @mobile-medium {
+		background-size: 0;
+	}
+
+}
+
+.intro__content {
+	width: 50%;
+
+	@media @mobile-small {
+		width: 100%;
+	}
+}
+
+.intro__subtitle {
+	font-size: 2.13rem;
+	color: @black;
+	font-weight: 200;
+
+	@media @tablet {
+		font-size: 1.5rem;
+	}
+}
+
+.intro__title {
+	margin-bottom: 5px;
+
+	font-size: 3rem;
+	color: @black;
+	font-weight: 700;
+
+	@media @tablet {
+		font-size: 2rem;
+	}
+}
+
+.intro__text {
+	margin-bottom: 25px;
+
+	font-size: 1.2rem;
+	color: fade(@black, 70%);
+}
+
+.intro__photo {
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+	z-index: 1;
+
+
+
+	@media @mobile-small {
+		display: none;
+	}
+}
